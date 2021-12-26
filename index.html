@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/76e39e2b8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ohmyfood</title>
   </head>
   <body>
     <div class="container-racine">
@@ -14,7 +29,9 @@
 
       <main>
         <div class="localisation">
-          <div class="localisation_icon"></div>
+          <div class="localisation_icon">
+            <i class="fas fa-map-marker-alt padding"></i>
+          </div>
           <div class="localisation_ville"><p>Paris,Belleville</p></div>
         </div>
       </main>
@@ -26,19 +43,90 @@
         </p>
         <div class="button"><p>Explorer nos restaurants</p></div>
       </section>
-      <section class="fonctionnement">
-          <div class="choix">
-            <h2 class="choix__title">Fonctionnement</h2>
-            <div class="choix__fonction">
-                <div></div>
-                <div></div>
-                <div></div>
+      <section class="operations">
+        <h2>Fonctionnement</h2>
+        <div class="choices">
+          <div class="choice">
+            <span class="choice__number">1</span>
+            <i class="fas fa-mobile-alt"></i>
+            <span>Choisissez un restaurant</span>
+          </div>
+          <div class="choice">
+            <span class="choice__number">2</span>
+            <i class="fas fa-list-ul"></i>
+            <span>Composez votre menu</span>
+          </div>
+          <div class="choice">
+            <span class="choice__number">3</span>
+            <i class="fas fa-store"></i>
+            <span>Dégustez au restaurant</span>
+          </div>
+        </div>
+      </section>
+      <section class="restaurant">
+        <h2>Restaurants</h2>
+        <div class="cards">
+          <div class="card card1">
+            <div class="picture"><p class="new">Nouveau</p></div>
+            <div class="info">
+              <div>
+                <div class="title">La palette du gout</div>
+                <div class="subtitle">Ménilmontant</div>
+              </div>
+              <div class="icon"><i class="fa-thin fa-heart"></i></div>
             </div>
           </div>
+
+          <div class="card card2">
+            <div class="picture"><p class="new">Nouveau</p></div>
+            <div class="info">
+              <div>
+                <div class="title">Note enchantée</div>
+                <div class="subtitle">Charonne</div>
+              </div>
+              <div class="icon"><i class="fa-light fa-heart"></i></div>
+            </div>
+          </div>
+
+          <div class="card card3">
+            <div class="picture"></div>
+            <div class="info">
+              <div>
+                <div class="title">la francaise</div>
+                <div class="subtitle">Cité Rouge</div>
+              </div>
+              <div class="icon"><i class="fa-thin fa-heart"></i></div>
+            </div>
+          </div>
+
+          <div class="card card4">
+            <div class="picture"></div>
+            <div class="info">
+              <div>
+                <div class="title">délice des sens</div>
+                <div class="subtitle">Folie-Méricourt</div>
+              </div>
+              <div class="icon"><i class="fa-thin fa-heart"></i></div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
+
     <footer>
-        
+      <div class="pied">
+        <h1 class="logo">ohmyfood</h1>
+        <div class="icon_titre">
+          <div class="icon"><i class="fas fa-utensils"></i></div>
+          <div class="titre">Proposer un restaurant</div>
+        </div>
+        <div class="icon_titre">
+          <div class="icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="titre">Devenir partenaire</div>
+        </div>
+        <div>Mentions légales</div>
+        <div>Contact</div>
+      </div>
     </footer>
   </body>
 </html>
