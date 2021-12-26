@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  background-color: #f6f6f6;
+  font-family: roboto;
+}
+
+header .logo {
+  font-family: "Shrikhand", cursive;
+  font: size 2em;
+}
+
+.header {
+  box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  background-color: rgb(214, 206, 221);
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  border: 2px solid rosybrown;
+  background-color: #ff79da;
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+  color: seashell;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operations {
+  padding: 0 25px;
+}
+.choice {
+  /* border: 2px solid rgba(219, 218, 218, 0.856); */
+  border-radius: 13px;
+  background-color: rgb(228, 222, 222);
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  position: relative;
+  padding: 15px 25px;
+}
+.choice + .choice {
+  margin-top: 15px;
+}
+.choice i {
+  margin-right: 15px;
+}
+
+.choice__number {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: mediumorchid;
+  display: flex;
+  justify-content: center;
+  color: #f6f6f6;
+  position: absolute;
+  left: -11px;
+}
+
+.fa-mobile-alt:before {
+  content: "\f3cd";
+}
+
+.hero {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: lavender;
+  padding: 0 10px;
+  box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
+  width: auto;
+  height: auto;
+  margin: 10px 20px;
+}
+
+.restaurant {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.localisation_icon {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.padding {
+  padding: 0 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-left: 15px;
+  border-radius: inherit;
+}
+.title {
+  font-weight: bold;
+  font-size: large;
+}
+.new {
+  padding: 10px 20px;
+  background-color: #99e2d0;
+  border: 2px solid #99e2d0;
+  width: 50px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.restaurant {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant .cards .card {
+  background-color: white;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 25px;
+  width: 450px;
+}
+
+.restaurant .cards .card .picture {
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  object-fit: cover;
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.restaurant .cards .card1 .picture {
+  background-image: url("images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.restaurant .cards .card2 .picture {
+  background-image: url("images/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.restaurant .cards .card3 .picture {
+  background-image: url("images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.restaurant .cards .card4 .picture {
+  background-image: url("images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.choice {
+  border: 2px solid rgba(219, 218, 218, 0.856);
+  border-radius: 20px;
+  background-color: rgb(228, 222, 222);
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+}
+
+.choice__number {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: mediumorchid;
+  display: flex;
+  justify-content: center;
+  color: #f6f6f6;
+}
+
+/**** footer*****/
+footer {
+  line-height: 30px;
+
+  background-color: black;
+  color: blanchedalmond;
+}
+footer .pied {
+  margin-left: 25px;
+}
+
+.icon_titre {
+  display: flex;
+  justify-content: last baseline;
+  align-items: center;
+}
+footer .titre {
+  padding: 10px;
+}
+
+@media screen and(min-width:768px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
