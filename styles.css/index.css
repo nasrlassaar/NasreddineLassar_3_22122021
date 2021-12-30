@@ -1,15 +1,21 @@
+/****Generale*****/
+
 body {
   margin: 0;
   background-color: #f6f6f6;
-  font-family: roboto;
+  font-family: "roboto", sans-serif;
 }
+
+/******Header*****/
 
 header .logo {
   font-family: "Shrikhand", cursive;
   font: size 2em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.header {
+header {
   box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
   position: relative;
   display: flex;
@@ -25,6 +31,7 @@ header .logo {
   align-items: center;
   font-size: large;
   background-color: rgb(214, 206, 221);
+  cursor: pointer;
 }
 
 .food {
@@ -38,16 +45,17 @@ header .logo {
 }
 
 .button {
-  border: 2px solid rosybrown;
   background-color: #ff79da;
   border-radius: 20px;
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
   font-weight: bold;
   color: seashell;
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  box-shadow: 5px 0 6px black;
+}
+
+.button :hover {
+  transform: scale(1, 2);
 }
 
 .operations {
@@ -60,6 +68,9 @@ header .logo {
   box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
   position: relative;
   padding: 15px 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .choice + .choice {
   margin-top: 15px;
@@ -78,31 +89,16 @@ header .logo {
   color: #f6f6f6;
   position: absolute;
   left: -11px;
+  cursor: pointer;
 }
 
 .fa-mobile-alt:before {
   content: "\f3cd";
 }
-
-.hero {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: lavender;
-  padding: 0 10px;
-  box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
-  width: auto;
-  height: auto;
-  margin: 10px 20px;
+.fontsize {
+  font-size: 30px;
 }
 
-.restaurant {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 .localisation_icon {
   padding-right: 10px;
   margin-right: 10px;
@@ -114,9 +110,11 @@ header .logo {
 .info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
   margin-left: 15px;
   border-radius: inherit;
+  padding: 15px 15px;
 }
 .title {
   font-weight: bold;
@@ -127,14 +125,17 @@ header .logo {
   background-color: #99e2d0;
   border: 2px solid #99e2d0;
   width: 50px;
-  border-radius: 5px;
+  border-radius: 3px;
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
+/****Restaurant****/
 .restaurant {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -150,6 +151,11 @@ header .logo {
   width: 450px;
 }
 
+.restaurant .cards .card :hover {
+  transform: scale(1, 1);
+  cursor: pointer;
+}
+
 .restaurant .cards .card .picture {
   background-size: cover;
   background-position: center;
@@ -162,19 +168,19 @@ header .logo {
 }
 
 .restaurant .cards .card1 .picture {
-  background-image: url("images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url(" ../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 .restaurant .cards .card2 .picture {
-  background-image: url("images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .restaurant .cards .card3 .picture {
-  background-image: url("images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .restaurant .cards .card4 .picture {
-  background-image: url("images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .choice {
@@ -183,23 +189,18 @@ header .logo {
   background-color: rgb(228, 222, 222);
   box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
 }
-
-.choice__number {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: mediumorchid;
-  display: flex;
-  justify-content: center;
-  color: #f6f6f6;
+.marging {
+  margin: 15px 0 0;
 }
 
 /**** footer*****/
 footer {
   line-height: 30px;
-
   background-color: black;
   color: blanchedalmond;
+  margin-top: 20px;
+  padding: 5px 5px 30px 5px;
+  outline: none;
 }
 footer .pied {
   margin-left: 25px;
@@ -207,20 +208,46 @@ footer .pied {
 
 .icon_titre {
   display: flex;
-  justify-content: last baseline;
   align-items: center;
 }
+
 footer .titre {
   padding: 10px;
 }
+footer .logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 26px;
+}
 
-@media screen and(min-width:768px) {
+* a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a {
+  color: #f6f6f6;
+}
+
+/*****media*******/
+
+@media screen and (min-width: 768px) {
   .cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .pied {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

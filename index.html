@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css/index.css" />
     <script
       src="https://kit.fontawesome.com/76e39e2b8b.js"
       crossorigin="anonymous"
@@ -24,7 +24,7 @@
   <body>
     <div class="container-racine">
       <header class="header">
-        <h1 class="logo">ohmyfood</h1>
+        <a href="./index.html"><h1 class="logo">ohmyfood</h1></a>
       </header>
 
       <main>
@@ -46,7 +46,7 @@
       <section class="operations">
         <h2>Fonctionnement</h2>
         <div class="choices">
-          <div class="choice">
+          <div class="choice marging">
             <span class="choice__number">1</span>
             <i class="fas fa-mobile-alt"></i>
             <span>Choisissez un restaurant</span>
@@ -66,66 +66,82 @@
       <section class="restaurant">
         <h2>Restaurants</h2>
         <div class="cards">
-          <div class="card card1">
-            <div class="picture"><p class="new">Nouveau</p></div>
-            <div class="info">
-              <div>
-                <div class="title">La palette du gout</div>
-                <div class="subtitle">Ménilmontant</div>
+          <a href="./menu1.html">
+            <div class="card card1">
+              <div class="picture"><p class="new">Nouveau</p></div>
+              <div class="info">
+                <div>
+                  <div class="title">La palette du gout</div>
+                  <div class="subtitle">Ménilmontant</div>
+                </div>
+                <div class="icon"><i class="far fa-heart fontsize"></i></div>
               </div>
-              <div class="icon"><i class="fa-thin fa-heart"></i></div>
             </div>
-          </div>
+          </a>
 
-          <div class="card card2">
-            <div class="picture"><p class="new">Nouveau</p></div>
-            <div class="info">
-              <div>
-                <div class="title">Note enchantée</div>
-                <div class="subtitle">Charonne</div>
+          <a href="./menu3.html">
+            <div class="card card2">
+              <div class="picture"><p class="new">Nouveau</p></div>
+              <div class="info">
+                <div>
+                  <div class="title">Note enchantée</div>
+                  <div class="subtitle">Charonne</div>
+                </div>
+                <div class="icon">
+                  <i class="far fa-heart fontsize"></i>
+                </div>
               </div>
-              <div class="icon"><i class="fa-light fa-heart"></i></div>
             </div>
-          </div>
+          </a>
 
-          <div class="card card3">
-            <div class="picture"></div>
-            <div class="info">
-              <div>
-                <div class="title">la francaise</div>
-                <div class="subtitle">Cité Rouge</div>
+          <a href="./menu4.html">
+            <div class="card card3">
+              <div class="picture"></div>
+              <div class="info">
+                <div>
+                  <div class="title">la francaise</div>
+                  <div class="subtitle">Cité Rouge</div>
+                </div>
+                <div class="icon"><i class="far fa-heart fontsize"></i></div>
               </div>
-              <div class="icon"><i class="fa-thin fa-heart"></i></div>
             </div>
-          </div>
+          </a>
 
-          <div class="card card4">
-            <div class="picture"></div>
-            <div class="info">
-              <div>
-                <div class="title">délice des sens</div>
-                <div class="subtitle">Folie-Méricourt</div>
+          <a href="./menu2.html">
+            <div class="card card4">
+              <div class="picture"></div>
+              <div class="info">
+                <div>
+                  <div class="title">délice des sens</div>
+                  <div class="subtitle">Folie-Méricourt</div>
+                </div>
+                <div class="icon"><i class="far fa-heart fontsize"></i></div>
               </div>
-              <div class="icon"><i class="fa-thin fa-heart"></i></div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </div>
 
     <footer>
       <div class="pied">
-        <h1 class="logo">ohmyfood</h1>
-        <div class="icon_titre">
-          <div class="icon"><i class="fas fa-utensils"></i></div>
-          <div class="titre">Proposer un restaurant</div>
-        </div>
-        <div class="icon_titre">
-          <div class="icon"><i class="fas fa-hands-helping"></i></div>
-          <div class="titre">Devenir partenaire</div>
-        </div>
-        <div>Mentions légales</div>
-        <div>Contact</div>
+        <a href="#"> <h1 class="logo">ohmyfood</h1></a>
+        <a href="#">
+          <div class="icon_titre">
+            <div class="icon"><i class="fas fa-utensils"></i></div>
+            <div class="titre">Proposer un restaurant</div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="icon_titre">
+            <div class="icon"><i class="fas fa-hands-helping"></i></div>
+            <div class="titre">Devenir partenaire</div>
+          </div>
+        </a>
+
+        <a href="#"><div>Mentions légales</div></a>
+        <a href="ohmyfood@gmail.dz"><div>Contact</div></a>
       </div>
     </footer>
   </body>
