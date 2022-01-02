@@ -12,6 +12,7 @@ header .logo {
   font-family: "Shrikhand", cursive;
   font: size 2em;
   cursor: pointer;
+  color: #000;
   text-decoration: none;
 }
 
@@ -25,6 +26,16 @@ header {
   width: 100%;
 }
 
+img {
+  margin-bottom: -50px;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -32,16 +43,6 @@ header {
   font-size: large;
   background-color: rgb(214, 206, 221);
   cursor: pointer;
-}
-
-.food {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .button {
@@ -92,9 +93,17 @@ header {
   cursor: pointer;
 }
 
-.fa-mobile-alt:before {
-  content: "\f3cd";
+.fa-heart:before :hover {
+  background-color: purple;
+  transform: scale(2);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  content: "\f004";
 }
+
+.fa-heart:before {
+  content: "\f004";
+}
+
 .fontsize {
   font-size: 30px;
 }
@@ -116,6 +125,7 @@ header {
   border-radius: inherit;
   padding: 15px 15px;
 }
+
 .title {
   font-weight: bold;
   font-size: large;

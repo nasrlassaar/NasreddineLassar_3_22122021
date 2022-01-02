@@ -4,6 +4,8 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+/******Header*****/
+
 header .logo {
   font-family: "Shrikhand", cursive;
   font-size: 2em;
@@ -14,6 +16,7 @@ header .logo {
 
 img {
   margin-bottom: -50px;
+  object-fit: cover;
 }
 
 header {
@@ -83,26 +86,31 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: rgb(248, 246, 246);
-  height: 40px;
+  width: 315px;
   line-height: 25px;
   padding: 15px;
   margin: 15px;
 }
 
+h2 {
+  border-bottom: 4px solid #99e2d0;
+  width: 45px;
+}
+
 .button-com {
   color: white;
   border-radius: 200px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   padding: 15px 20px;
   margin: 50px 0;
   font-size: 18px;
-  background-color: magenta;
+  background-color: #9356dc;
   display: flex;
   justify-content: center;
 }
+
 /**** footer*****/
 footer {
   line-height: 20px;
@@ -129,7 +137,7 @@ footer a {
 }
 
 * a {
-  color: black;
+  color: #353535;
   text-decoration: none;
 }
 
