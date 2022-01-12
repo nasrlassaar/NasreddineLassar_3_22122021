@@ -17,6 +17,8 @@ header .logo {
 img {
   margin-bottom: -50px;
   object-fit: cover;
+  object-position: bottom;
+  display: block;
 }
 
 header {
@@ -29,10 +31,11 @@ header {
   width: 100%;
 }
 
-header i {
+.fleche .fa-arrow-left {
   position: absolute;
   left: 40px;
-  font-size: 20px;
+  top: 23px;
+  font-size: 35px;
   cursor: pointer;
 }
 
@@ -40,13 +43,40 @@ header i {
   font-size: 30px;
 }
 
-.parag {
-  font-size: 18px;
-  font-weight: bold;
+/******section menu *****/
+
+.menu4 .menu4a h1 {
+  padding-left: 25px;
 }
-.price {
-  font-size: 18px;
-  font-weight: bold;
+
+section .menu {
+  width: 100%;
+}
+
+.position {
+  position: absolute;
+  right: 35px;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.menu4 .menu4a .far {
+  opacity: 1;
+}
+
+.menu4 .menu4a .fas {
+  opacity: 0;
+  color: rgb(137, 75, 153);
+  cursor: pointer;
+}
+
+.menu4 .menu4a .fas:hover {
+  opacity: 1;
+}
+
+.menu4 .menu4a h1 {
+  padding-left: 25px;
+  font-family: "Shrikhand", cursive;
 }
 
 section {
@@ -55,11 +85,24 @@ section {
   margin-top: -50px;
 }
 
-.menu4a {
+section .menu {
+  width: 100%;
+}
+
+h2 {
+  border-bottom: 4px solid #99e2d0;
+  width: 45px;
+  margin-left: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.menu4 .menu4a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: stretch;
   border-top-left-radius: 65px;
   border-top-right-radius: 65px;
@@ -68,6 +111,7 @@ section {
   line-height: 25px;
   padding: 15px;
   margin: 15px;
+  position: relative;
 }
 
 .menu4 {
@@ -79,34 +123,88 @@ section {
   align-items: center;
 }
 
-.title {
+.menu4 .dish {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: rgb(248, 246, 246);
-  width: 315px;
-  line-height: 25px;
   padding: 15px;
   margin: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: padding-right 500ms;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu4 .dish:hover {
+  padding-right: 90px;
+}
+
+.menu4 .dish .description {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu4 .dish .description .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu4 .dish .description .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu4 .dish .price {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.menu4 .dish .check {
+  background-color: aqua;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  transition: margin-right 500ms;
+  margin-right: -70px;
+}
+
+.menu4 .dish:hover .check {
+  margin-right: 0;
+}
+
+.menu4 .dish:hover .check .fas {
+  transition: transform 500ms;
+  transform: rotate(360deg);
 }
 
 .button-com {
-  background-color: #9356dc;
-  border-radius: 200px;
-  padding: 15px 20px;
-  font-weight: bold;
   color: white;
-  cursor: pointer;
-  box-shadow: 5px 0 6px black;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 15px 40px;
+  margin: 45px 0;
+  font-size: 18px;
+  background-color: #9356dc;
   display: flex;
   justify-content: center;
-  margin: 40px;
+  cursor: pointer;
+  opacity: 1;
+  background-image: linear-gradient(mediumorchid, #ff79da);
 }
 
-h2 {
-  border-bottom: 4px solid #99e2d0;
-  width: 45px;
+.button-com:hover {
+  background-image: linear-gradient(mediumorchid, #ff79da);
+  color: #271313;
+  opacity: 0.7;
 }
 
 /**** footer*****/
@@ -145,26 +243,14 @@ footer .logo {
   font-size: 26px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   footer .pied {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
   }
-  .entrées {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .plats {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .desserts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  .img {
+    height: 500px;
   }
 }

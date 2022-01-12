@@ -16,6 +16,8 @@ header .logo {
 img {
   margin-bottom: -50px;
   object-fit: cover;
+  object-position: bottom;
+  display: block;
 }
 
 header {
@@ -28,10 +30,11 @@ header {
   width: 100%;
 }
 
-header i {
+.fleche .fa-arrow-left {
   position: absolute;
   left: 40px;
-  font-size: 20px;
+  top: 23px;
+  font-size: 35px;
   cursor: pointer;
 }
 
@@ -39,27 +42,31 @@ header i {
   font-size: 30px;
 }
 
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  background-color: rgb(248, 246, 246);
-  height: 40px;
-  line-height: 25px;
-  padding: 15px;
-  margin: 15px;
-  opacity: calc(0, 2);
+/******section menu *****/
+
+.menu1 .menu1a h1 {
+  padding-left: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "Shrikhand", cursive;
 }
 
-.parag {
-  font-size: 18px;
-  font-weight: bold;
+section .menu {
+  width: 100%;
 }
 
-.price {
-  font-size: 25px;
-  font-weight: bold;
+.entrées {
+  width: 100%;
+}
+
+h2 {
+  border-bottom: 4px solid #99e2d0;
+  width: 45px;
+  margin-left: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 section {
@@ -68,29 +75,101 @@ section {
   margin-top: -50px;
 }
 
+.menu1 .dish {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(248, 246, 246);
+  padding: 15px;
+  margin: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: padding-right 500ms;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu1 .dish:hover {
+  padding-right: 90px;
+}
+
+.menu1 .dish .description {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu1 .dish .description .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu1 .dish .description .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu1 .dish .price {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.menu1 .dish .check {
+  background-color: aqua;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  transition: margin-right 500ms;
+  margin-right: -70px;
+}
+
+.menus {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu1 .dish:hover .check {
+  margin-right: 0;
+}
+
+.menu1 .dish:hover .check .fas {
+  transition: transform 500ms;
+  transform: rotate(360deg);
+}
+
 .button-com {
   color: white;
   border-radius: 200px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  padding: 15px 20px;
-  margin: 50px 0;
+  padding: 15px 40px;
+  margin: 45px 0;
   font-size: 18px;
   background-color: #9356dc;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  opacity: 1;
+  background-image: linear-gradient(mediumorchid, #ff79da);
 }
 
-h2 {
-  border-bottom: 4px solid #99e2d0;
-  width: 45px;
+.button-com:hover {
+  background-image: linear-gradient(mediumorchid, #ff79da);
+  color: #271313;
+  opacity: 0.7;
 }
 
-.menu1a {
+.menu1 .menu1a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: stretch;
   border-top-left-radius: 65px;
   border-top-right-radius: 65px;
@@ -99,6 +178,28 @@ h2 {
   line-height: 25px;
   padding: 15px;
   margin: 15px;
+  position: relative;
+}
+
+.position {
+  position: absolute;
+  right: 35px;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.menu1 .menu1a .far {
+  opacity: 1;
+}
+.menu1 .menu1a .fas {
+  opacity: 0;
+  color: rgb(137, 75, 153);
+  cursor: pointer;
+  animation: 3s opacity ease-in;
+}
+
+.menu1 .menu1a .fas:hover {
+  opacity: 1;
 }
 
 .menu1 {
@@ -110,27 +211,10 @@ h2 {
   align-items: center;
 }
 
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  background-color: rgb(248, 246, 246);
-  width: 315px;
-  line-height: 25px;
-  padding: 15px;
-  margin: 15px;
-  cursor: pointer;
-  opacity: calc(2);
-}
-
-.title :hover {
-  opacity: 1, 2;
-}
-
-.title .slide-left {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.menu .menu1 .dish .description .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /**** footer*****/
@@ -156,7 +240,7 @@ footer .titre {
 }
 
 * a {
-  color: black;
+  color: #353535;
   text-decoration: none;
 }
 
@@ -170,8 +254,12 @@ footer .logo {
   font-size: 26px;
 }
 
+footer .pied .icon_titre .icon {
+  position: relative;
+}
+
 /*******responsive*******/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   footer .pied {
     display: flex;
     flex-wrap: wrap;
@@ -179,52 +267,7 @@ footer .logo {
     justify-content: space-evenly;
   }
 
-  .entrées {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .plats {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .desserts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-12-31 20:43:42
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-left
- * ----------------------------------------
- */
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+  .img {
+    height: 500px;
   }
 }

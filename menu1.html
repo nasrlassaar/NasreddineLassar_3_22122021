@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -22,7 +28,7 @@
   <body>
     <header>
       <a href="#"><h1 class="logo">ohmyfood</h1></a>
-      <div>
+      <div class="fleche">
         <a href="./index.html"><i class="fas fa-arrow-left fontsize"></i></a>
       </div>
     </header>
@@ -36,97 +42,117 @@
     <section class="menu1">
       <div class="menu1a">
         <h1>La palette du goût</h1>
-        <i class="far fa-heart fontsize"></i>
+        <i class="far fa-heart fontsize position"></i>
+        <i class="fas fa-heart fontsize position"></i>
       </div>
 
-      <div>
-        <h2>Entrées</h2>
+      <div class="menu">
+        <h2>entrées</h2>
+
         <div class="entrées">
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Fricassée d'escargot</div>
-              <div>Au piment d'Espelette</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Fricassée d'escargot</div>
+              <div class="detail text">Au piment d'Espelette</div>
             </div>
             <span class="price">25€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Foie gras de canard mi-cuit</div>
-              <div>Et ses copeaux de truffe noire</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Foie gras de canard mi-cuit</div>
+              <div class="detail text">Et ses copeaux de truffe noire</div>
             </div>
             <span class="price">35€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Oeuf au plat</div>
-              <div>Assaisonné à la truffe sur lit de caviar</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Oeuf au plat</div>
+              <div class="detail text">
+                Assaisonné à la truffe sur lit de caviar
+              </div>
             </div>
             <span class="price">20€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
         </div>
       </div>
 
-      <div>
-        <h2>Plats</h2>
-        <div class="plats">
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Filet de boeuf aux herbes</div>
-              <div>Accompagné de sa ribambelle de légumes</div>
-            </div>
+      <div class="menu">
+        <h2>PLATS</h2>
 
+        <div class="plats">
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Filet de boeuf aux herbes</div>
+              <div class="detail text">
+                Accompagné de sa ribambelle de légumes
+              </div>
+            </div>
             <span class="price">40€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Parmentier de queue de boeuf</div>
-              <div>À la truffe noire sur sa purée de panais</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Parmentier de queue de boeuf</div>
+              <div class="detail text">
+                À la truffe noire sur sa purée de panais
+              </div>
             </div>
             <span class="price">35€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Filet de turbot</div>
-              <div>Aux agrumes</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Filet de turbot</div>
+              <div class="detail text">Aux agrumes</div>
             </div>
             <span class="price">44€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
         </div>
       </div>
 
-      <div>
-        <h2>Desserts</h2>
+      <div class="menu">
+        <h2>DESSERTS</h2>
         <div class="desserts">
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Paris-Brest</div>
-              <div>Revisité</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Paris-Brest</div>
+              <div class="detail text">Revisité</div>
             </div>
             <span class="price">18€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Macaron au chocolat d'exception</div>
-              <div>Et glace à la vanille de Madagascar</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Macaron au chocolat d'exception</div>
+              <div class="detail text">Et glace à la vanille de Madagascar</div>
             </div>
             <span class="price">22€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <div class="title">
-            <div class="subtitle">
-              <div class="parag">Mousse au chocolat</div>
-              <div>Au piment d'Espelette et à la truffe noire</div>
+          <div class="dish">
+            <div class="description">
+              <div class="name text">Mousse au chocolat</div>
+              <div class="detail text">
+                Au piment d'Espelette et à la truffe noire
+              </div>
             </div>
             <span class="price">23€</span>
+            <div class="check"><i class="fas fa-check-circle"></i></div>
           </div>
         </div>
       </div>
-      <div class="button-com">commander</div>
+
+      <div class="button-com">Commander</div>
     </section>
 
     <footer>
