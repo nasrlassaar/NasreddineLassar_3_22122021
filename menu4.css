@@ -67,7 +67,9 @@ section .menu {
 .menu4 .menu4a .fas {
   opacity: 0;
   color: rgb(137, 75, 153);
+  transition: ease-in-out 1s;
   cursor: pointer;
+  transform: scale(1.08);
 }
 
 .menu4 .menu4a .fas:hover {
@@ -108,6 +110,7 @@ h2 {
   border-top-right-radius: 65px;
   background-color: rgb(231, 225, 225);
   width: 100%;
+  max-width: 900px;
   line-height: 25px;
   padding: 15px;
   margin: 15px;

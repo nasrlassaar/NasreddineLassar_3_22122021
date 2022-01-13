@@ -57,6 +57,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .food .title {
@@ -87,29 +88,35 @@ header {
 /*****class operatipons*****/
 .operations {
   padding: 20px 25px 70px 25px;
+  background-color: white;
 }
 .operations .choice {
-  border-radius: 13px;
+  border-radius: 30px;
   background-color: #f6f6f6;
   box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
   position: relative;
-  padding: 15px 25px;
+  padding: 30px 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
+span {
+  font-weight: bold;
+}
+
 .operations .choice:hover {
   background-image: linear-gradient(rgb(231, 221, 221), rgb(182, 170, 170));
+  transform: scale(1.01);
 }
 .choice + .choice {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .operations .choice i {
   margin-right: 15px;
 }
 
-.operations .choice i .fa-store {
+.color {
   color: #9356dc;
 }
 
@@ -209,14 +216,8 @@ header {
   background-image: url("../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.choice {
-  border: 2px solid rgba(219, 218, 218, 0.856);
-  border-radius: 20px;
-  background-color: rgb(228, 222, 222);
-  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
-}
 .marging {
-  margin: 15px 0 0;
+  margin: 20px 0 0;
 }
 
 .restaurant .cards .far {
@@ -230,13 +231,12 @@ header {
   transform: translate(-34.4px);
   font-size: 30px;
   opacity: 0;
+  transition: ease-in 1s;
 }
 
 .restaurant .cards .fas:hover {
   opacity: 1;
-  color: linear-gradient mediumorchid;
 }
-
 /**** footer*****/
 footer {
   line-height: 30px;
@@ -296,28 +296,33 @@ footer a {
   }
 }
 /********LOADER*******/
-.wating {
-  position: absolute;
-  height: 100%;
 
-  background-color: #146499;
-  opacity: 1;
-  animation: waiting 4s;
+.wating {
+  position: fixed;
+  height: 100vh;
+  inset: 0px;
+  background-color: #e4ebe8d7;
+  opacity: 0.9;
+  animation: scrol 3s 3s;
+  animation-fill-mode: forwards;
+  z-index: 4;
+  visibility: visible;
+  transform-origin: top;
 }
 
 .loader {
   position: fixed;
   top: 50%;
   right: 50%;
+  left: 50%;
   border: 18px solid #bdc3c7;
   width: 140px;
   height: 140px;
   border-left-color: chartreuse;
   border-right-color: darkblue;
   border-radius: 50%;
-  animation: wait 3s linear infinite;
-  opacity: 1;
-  animation-duration: 1s;
+  animation: wait 1s 0s linear infinite;
+  animation-fill-mode: forwards;
 }
 
 @keyframes wait {
@@ -325,10 +330,15 @@ footer a {
     transform: rotate(0deg) scale(1);
     border-left-color: darkgreen;
     border-right-color: darkmagenta;
+    visibility: visible;
   }
   25% {
-    border-left-color: rgb(99, 23, 23);
-    border-right-color: rgb(99, 23, 23);
+    border-left-color: rgb(13, 119, 21);
+    border-right-color: rgb(37, 185, 69);
+  }
+  37% {
+    border-bottom-color: #ff79da;
+    border-top-color: chartreuse;
   }
 
   50% {
@@ -347,14 +357,19 @@ footer a {
     visibility: hidden;
   }
 }
-@keyframes wating {
-  0% {
-    opacity: 1;
+@keyframes scrol {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes scroll {
+  from {
     visibility: visible;
   }
-  100% {
-    opacity: 0;
+
+  to {
+    transform: scale(0);
     visibility: hidden;
-    z-index: 20;
   }
 }
