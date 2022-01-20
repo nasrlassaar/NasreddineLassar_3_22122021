@@ -19,6 +19,8 @@ img {
   object-fit: cover;
   object-position: bottom;
   display: block;
+  height: 450px;
+  width: 100%;
 }
 
 header {
@@ -35,12 +37,12 @@ header {
   position: absolute;
   left: 40px;
   top: 23px;
-  font-size: 35px;
+  font-size: 25px;
   cursor: pointer;
 }
 
 .fontsize {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /******section menu *****/
@@ -74,16 +76,20 @@ section .menu {
 
 .menu4 .menu4a .fas:hover {
   opacity: 1;
+  transform: scale(1.08);
 }
 
-.menu4 .menu4a h1 {
+.menu4 .menu4a p {
   padding-left: 25px;
   font-family: "Shrikhand", cursive;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 25px;
 }
 
 section {
   background-color: rgb(231, 225, 225);
-  border-radius: 30px 30px 0 0;
   margin-top: -50px;
 }
 
@@ -112,9 +118,13 @@ h2 {
   width: 100%;
   max-width: 900px;
   line-height: 25px;
-  padding: 15px;
-  margin: 15px;
+  margin-bottom: 20px;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  margin: auto;
 }
 
 .menu4 {
@@ -124,6 +134,11 @@ h2 {
   align-content: center;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: -70px;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
 }
 
 .menu4 .dish {
@@ -211,11 +226,12 @@ h2 {
 }
 
 /**** footer*****/
+
 footer {
   line-height: 20px;
   background-color: #353535;
   color: blanchedalmond;
-  padding-top: 5px 5px 30px 5px;
+  padding-top: 10px;
 }
 footer .pied {
   margin-left: 25px;
@@ -256,4 +272,53 @@ footer .logo {
   .img {
     height: 500px;
   }
+}
+
+.menu4 .opacite {
+  animation: opacity 1s backwards;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#case1 {
+  animation-delay: 0.1s;
+}
+
+#case2 {
+  animation-delay: 0.2s;
+}
+
+#case3 {
+  animation-delay: 0.3s;
+}
+
+#case4 {
+  animation-delay: 0.4s;
+}
+
+#case5 {
+  animation-delay: 0.5s;
+}
+
+#case6 {
+  animation-delay: 0.6s;
+}
+
+#case7 {
+  animation-delay: 0.7s;
+}
+
+#case8 {
+  animation-delay: 0.8s;
+}
+
+#case9 {
+  animation-delay: 0.9s;
 }
