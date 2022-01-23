@@ -118,6 +118,9 @@ h2 {
   cursor: pointer;
   transform: scale(1.08);
   transition: ease-in-out 1s;
+  background: linear-gradient(mediumorchid, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu2 .menu2a .fas:hover {
@@ -178,7 +181,7 @@ h2 {
 }
 
 .menu2 .dish .check {
-  background-color: aqua;
+  background-color: #99e2d0;
   color: white;
   display: flex;
   font-size: 30px;

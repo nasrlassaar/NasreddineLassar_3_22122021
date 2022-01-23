@@ -235,7 +235,9 @@ span {
 
 .restaurant .cards .fas {
   font-size: 30px;
-  color: mediumorchid;
+  background: linear-gradient(mediumorchid, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translate(-34.4px);
   font-size: 30px;
   opacity: 0;

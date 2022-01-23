@@ -118,7 +118,7 @@ h2 {
 }
 
 .menu3 .dish .check {
-  background-color: aqua;
+  background-color: #99e2d0;
   color: white;
   display: flex;
   font-size: 30px;
@@ -168,7 +168,9 @@ h2 {
 }
 .menu3 .menu3a .fas {
   opacity: 0;
-  color: rgb(137, 75, 153);
+  background: linear-gradient(mediumorchid, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: ease-in-out 1s;
   cursor: pointer;
   transform: scale(1.08);
