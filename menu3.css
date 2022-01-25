@@ -139,7 +139,7 @@ h2 {
 
 .menu .dish:hover .check .fas {
   transition: transform 500ms;
-  transform: rotate(360deg);
+  transform: rotate(720deg);
 }
 
 .menu3 .menu3a {

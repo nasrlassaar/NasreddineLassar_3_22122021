@@ -203,7 +203,7 @@ h2 {
 
 .menu2 .dish:hover .check .fas {
   transition: transform 500ms;
-  transform: rotate(360deg);
+  transform: rotate(720deg);
 }
 
 .button-com {
