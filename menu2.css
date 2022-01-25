@@ -115,6 +115,7 @@ h2 {
 }
 .menu2 .menu2a .fas {
   opacity: 0;
+  color: mediumorchid;
   cursor: pointer;
   transform: scale(1.08);
   transition: ease-in-out 1s;

@@ -168,6 +168,7 @@ h2 {
 }
 .menu3 .menu3a .fas {
   opacity: 0;
+  color: mediumorchid;
   background: linear-gradient(mediumorchid, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

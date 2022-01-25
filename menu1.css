@@ -145,7 +145,7 @@ section {
 
 .menu1 .dish:hover .check .fas {
   transition: transform 500ms;
-  transform: rotate(360deg);
+  transform: rotate(720deg);
 }
 
 .button-com {
@@ -200,6 +200,7 @@ section {
 }
 .menu1 .menu1a .fas {
   opacity: 0;
+  color: mediumorchid;
   background: linear-gradient(mediumorchid, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
